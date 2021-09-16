@@ -1,0 +1,103 @@
+.fptext
+{
+    top: 125px;
+    left: 30px;
+    color: #DCC172;
+}
+
+.sptext
+{
+    top: 125px;
+    right: 30px;
+    color: #DCC172;
+}
+
+.bbtext
+{
+    left: 30px;
+    color: #DCC172;
+}
+
+.rbtext
+{
+    right: 30px;
+    color: #DCC172;
+}
+
+.bluebans
+{
+    left: 20px; 
+}
+
+.redbans
+{
+    right: 20px;
+}
+
+.b-ban
+{
+    left: 0;
+    margin: 5px;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #D980FA;
+}
+
+.r-ban
+{
+    right: 0;
+    margin: 5px;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #D980FA;
+}
+
+.bpicks
+{  
+    left: 20px;
+}
+
+.rpicks
+{
+    right: 20px;
+}
+
+.b-pick
+{
+    position: absolute;
+    margin: 20px auto;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -75%);
+    border: 5px solid #45aaf2;
+}
+
+.b-role
+{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -100%);
+    color: #45aaf2;
+}
+
+.r-pick
+{
+    position: absolute;
+    margin: 20px auto;
+    right: 20%;
+    top: 50%;
+    transform: translate(50%, -75%);
+    border: 5px solid #fc5c65;
+}
+
+.r-role
+{
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translate(50%, -100%);
+    color: #fc5c65;
+}

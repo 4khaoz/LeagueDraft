@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>League of Legends - Draft King</title>
+    <link rel="stylesheet" href="../css/draftstyle.css">
+    <link rel="stylesheet" href="../css/blueStyles.css">
+    <script id="data" type="application/json" src="../python/data.json"></script>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+</head>
+<body>
+    <p class="fptext">First Pick</p>
+    <p class="sptext">Second Pick</p>
+
+    <!-- Blue Bans -->
+    <div class="bluebans bans-container">
+        <div class="ban-wrapper">
+            <p class="banp">5</p>
+            <div class="empty b-ban"></div>
+        </div>
+        <div class="ban-wrapper">
+            <p class="banp">4</p>
+            <div class="empty b-ban"></div>
+        </div>
+            
+        <div class="ban-wrapper">
+            <p class="banp">3</p>
+            <div class="empty b-ban"></div>
+        </div>
+        <div class="ban-wrapper">
+            <p class="banp">2</p>
+            <div class="empty b-ban"></div>
+        </div>
+        <div class="ban-wrapper">
+            <p class="banp">1</p>
+            <div class="empty b-ban"></div>
+        </div>
+    </div>
+    
+    <!-- Red Bans -->
+    <div class="redbans bans-container">
+        <div class="ban-wrapper">
+            <p class="banp">1</p>
+            <div class="empty r-ban"></div>
+        </div>
+        <div class="ban-wrapper">
+            <p class="banp">2</p>
+            <div class="empty r-ban"></div>
+        </div>
+        <div class="ban-wrapper">
+            <p class="banp">3</p>
+            <div class="empty r-ban"></div>
+        </div>
+        <div class="ban-wrapper">
+            <p class="banp">4</p>
+            <div class="empty r-ban"></div>
+        </div>
+        <div class="ban-wrapper">
+            <p class="banp">5</p>
+            <div class="empty r-ban"></div>
+        </div>
+        
+    </div>
+
+    <!-- Search Bar -->
+    <input type="text" id="searchbar" placeholder="Search..." maxlength="20">
+
+    <!-- Search List -->
+    <div class="champ-list-cont">
+        <div id="champ-list-grid" class="empty"></div>
+    </div>
+    
+    <p class="bbtext">Blue Bans</p>
+    <p class="rbtext">Red Bans</p>
+
+    
+    <div class="bpicks pickcont">
+        <div class="pick-wrapper">
+            <p class="b-role">B1</p>
+            <div id="b1" class="empty b-pick"></div>
+        </div>
+        <div class="pick-wrapper">
+            <p class="b-role">B2</p>
+            <div id="b2" class="empty b-pick"></div>
+        </div>
+        <div class="pick-wrapper">
+            <p class="b-role">B3</p>
+            <div id="b3" class="empty b-pick"></div>
+        </div>
+        <div class="pick-wrapper">
+            <p class="b-role">B4</p>
+            <div id="b4" class="empty b-pick"></div>
+        </div>
+        <div class="pick-wrapper">
+            <p class="b-role">B5</p>
+            <div id="b5" class="empty b-pick"></div>
+        </div>
+    </div>
+    
+    <!-- Red Picks -->
+    <div class="rpicks pickcont">
+        <div class="pick-wrapper">
+            <p class="r-role">R1</p>
+            <div id="r1" class="empty r-pick"></div>
+        </div>
+        <div class="pick-wrapper">
+            <p class="r-role">R2</p>
+            <div id="r2" class="empty r-pick"></div>
+        </div>
+        <div class="pick-wrapper">
+            <p class="r-role">R3</p>
+            <div id="r3" class="empty r-pick"></div>
+        </div>
+        <div class="pick-wrapper">
+            <p class="r-role">R4</p>
+            <div id="r4" class="empty r-pick"></div>
+        </div>
+        <div class="pick-wrapper">
+            <p class="r-role">R5</p>
+            <div id="r5" class="empty r-pick"></div>
+        </div>
+    </div>
+
+    <!-- Team Properties aka Traits -->
+    <div id="teamprops" class="team-props-cont">
+        <div class="tab">
+            <button id="BanLink" class="tablinks">Bans</button>
+            <button id="PickLink" class="tablinks">Picks</button>
+        </div>
+        <div id="teamprop-center" class="teampropscent">
+            <div id="TabBans" class="tabcontent">
+                <p class="propstext">Ban Traits</p>
+                <div id="bansprop" class="props-wrapper"></div>
+            </div>
+            <div id="TabPicks" class="tabcontent">
+                <p class="propstext">Pick Traits</p>
+                <div id="picksprop" class="props-wrapper"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Selected Champ Properties -->
+    <div id="selectprops">
+        <div id="selectprops-center">
+            <p class="propstext">Champion</p>
+            <div id="selector" class="select-wrapper"></div>
+        </div>
+    </div>
+
+    <form action="index.html">
+        <input type="submit" value="Return">
+    </form>
+
+    <input id="resetbtn" type="button" value="Reset">
+
+    <script type="text/javascript" src="../js/dragndrop.js"></script>
+    <script type="text/javascript" src="../js/draft.js"></script>
+    <script type="text/javascript" src="../js/searchfilter.js"></script>
+</body>
+</html>

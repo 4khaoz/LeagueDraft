@@ -1,0 +1,83 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #34495e;
+}
+
+.center
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bar
+{
+    width: 10px;
+    height: 100px;
+    background: #DCC172;
+    display: inline-block;
+    animation: loading 1.5s ease-in-out infinite;
+    border-radius: 25px;
+}
+
+.bar1
+{
+    animation-delay: 0.1s;
+}
+
+.bar2
+{
+    animation-delay: 0.2s;
+}
+
+.bar3
+{
+    animation-delay: 0.3s;
+}
+
+.bar4
+{
+    animation-delay: 0.4s;
+}
+
+.bar5
+{
+    animation-delay: 0.5s;
+}
+
+.bar6
+{
+    animation-delay: 0.6s;
+}
+
+.bar7
+{
+    animation-delay: 0.7s;
+}
+
+.bar8
+{
+    animation-delay: 0.8s;
+}
+
+@keyframes loading 
+{
+    0% 
+    {
+        transform: scaleY(0.1);
+        background: white;
+    }
+    50% 
+    {
+        transform: scaleY(1);
+        background: #DCC172;
+    }
+    100%
+    {
+        transform: scaleY(0.1);
+        background: white;
+    }
+}

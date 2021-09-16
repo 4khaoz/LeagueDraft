@@ -1,0 +1,25 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #34495e;
+}
+
+canvas
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid white;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: transparent;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
